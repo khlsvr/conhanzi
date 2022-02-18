@@ -30,11 +30,11 @@ The letters in ligature glyphs are in set positions and thus generating the liga
 
 The font construction was done using Fontforge with the help of its script execution feature to automate ligature generation.   
 
-* Instead of a new empty font project, the font work was done on top of a Code New Roman font. Every glyph in that font was transformed to 2048 width, which seems to be more suitable for Chinese characters. 
+* Instead of a new empty font project, the font work was done on top of a [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) font. Every glyph in that font was transformed to 2048 width, which seems to be more suitable for Chinese characters. 
 
-* Suitable versions of letters were created as their own glyphs the following way: Every letter has a version for position 1, position 2 and position 3 in a three letter combination ligature glyph and versions for positions 1 and 2 on a two letter combination ligature glyph, thus requiring 5 extra glyphs. For the letter `a` for example `a.top`, `a.bottom`, `a.left`, `a.top2` and `a.bottom2` was created. A script [generate_base_chars.py](generate_base_chars.py) was used to automate the generation of these glyphs. A hyphen was inserted as a placeholder for some testing purposes (still present in the generation script provided). After the automated glyph generation, the actual work for creating the appearance of these glyphs was done. The IPA Gothic font was used to copy, paste and modify the selected Chinese radical parts to these glyphs.
+* Suitable versions of letters were created as their own glyphs the following way: Every letter has a version for position 1, position 2 and position 3 in a three letter combination ligature glyph and versions for positions 1 and 2 on a two letter combination ligature glyph, thus requiring 5 extra glyphs. For the letter `a` for example `a.top`, `a.bottom`, `a.left`, `a.top2` and `a.bottom2` was created. A script [generate_base_chars.py](generate_base_chars.py) was used to automate the generation of these glyphs. A hyphen was inserted as a placeholder for some testing purposes (still present in the generation script provided). After the automated glyph generation, the actual work for creating the appearance of these glyphs was done. The [IPA Gothic](https://archlinux.org/packages/community/any/otf-ipafont/) font was used to copy, paste and modify the selected Chinese radical parts to these glyphs.
 
-* The necessary table and subtables were created for ligatures by executing the contents of the [generate_tables.py](generate_tables.py) from `File -> Execute Script`. Because of a high number of ligatures, creating multiple subtables was necessary to avoid reaching the max limit. [source].
+* The necessary table and subtables were created for ligatures by executing the contents of the [generate_tables.py](generate_tables.py) from `File -> Execute Script`. Because of a high number of ligatures, creating multiple subtables was necessary to avoid reaching the max limit. [source](https://github.com/fontforge/fontforge/issues/4416).
 
 * The ligatures were created programmatically by iterating through every combination copying the contents of the desired versions of the letters to the glyphs. To copy every three letter combination the contents of the script [ligatures_of_three_glyphs.py](ligatures_of_three_glyphs.py) was executed from the `File->Execute Script` and [ligatures_of_two_glyphs.py](ligatures_of_two_glyphs.py) similarly for the two letter combinations.
 
@@ -44,12 +44,12 @@ To use the font on-demand on any website, it is possible to create a shortcut ke
 
 One way to do that in Qutebrowser: After having installed the font to your system create empty.css with no content and toggle_font.css with the content ` * { font-family: "conhanzi" !important; font-size: 1.1rem; }` and place them in the Qutebrowser's config dir. Add a line to the Qutebrowser's config file with the content `config.bind('css', 'config-cycle content.user_stylesheets toggle_font.css empty.css')` to toggle the font with the key binding `css`.   
 
-Same can be achieved in other web browsers too. The dotsies website provides a "bookmarklet" method for this. There are probably other ways to do it too.  
+Same can be achieved in other web browsers too. For example the dotsies website provides a "bookmarklet" method for this. There are probably other ways to do it too.  
 
 To use the font properly in other applications make sure the application supports ligatures in fonts.  
 
 ## Legality
 
-Because two (free) fonts namely [IPA Gothic]https://archlinux.org/packages/community/any/otf-ipafont/) and [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) were used in making this font, although heavily modified, I'm not sure whether it is allowed to share the conhanzi font file here. Please let me know if I'm not allowed to share the font file here.
+Because two (free) fonts namely [IPA Gothic](https://archlinux.org/packages/community/any/otf-ipafont/) and [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) were used in making this font, although heavily modified, I'm not sure whether it is allowed to share the conhanzi font file here. Please let me know if I'm not allowed to share the font file here.
 
 
