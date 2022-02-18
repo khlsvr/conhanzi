@@ -1,0 +1,15 @@
+font = fontforge.open("font_name.otf")
+
+font.addLookup("ligatures","gsub_ligature", (),[["liga",[["latn",["dflt"]]]]])
+font.addLookupSubtable("ligatures","ligatureshi")
+font.addLookupSubtable("ligatures","ligatureshi2")
+font.addLookupSubtable("ligatures","ligatureshi3")
+font.addLookupSubtable("ligatures","ligatureshi4")
+font.addLookupSubtable("ligatures","ligatureshi5")
+font.addLookupSubtable("ligatures","ligatureshi6")
+font.addLookupSubtable("ligatures","ligatureshi7")
+font.addLookupSubtable("ligatures","ligatureshi8")
+font.addLookupSubtable("ligatures","ligatureshi9")
+font.addLookupSubtable("ligatures","ligatureshi10")
+font.addLookupSubtable("ligatures","ligatureshi11")
+
