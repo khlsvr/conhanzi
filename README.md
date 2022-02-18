@@ -18,11 +18,11 @@ The selection process for the glyphs was mostly based on the pronounciation of t
 
 ## How it works
 
-The ligatures are constructed systematically in such that for example a word `ligature` would include a ligature of `lig` followed by a ligature `atu` followed by a ligature of `re`. The alphabet set used in ligatures in this initial version is inclined towards the Finnish, including glyphs and ligatures for the `ä` and `ö` and excluding ligatures for `q`, `x` and `z`. Thus the word `Conhanzi` turns out to be constructed from `Con` + `han` + `z` + `i` glyphs. Capital letters can only appear at the beginning of a ligature.
+The ligatures are constructed systematically such that for example a word `ligature` would include a ligature of `lig` followed by a ligature `atu` followed by a ligature of `re`. The alphabet set used in ligatures in this initial version is inclined towards the Finnish, including glyphs and ligatures for the `ä` and `ö` and excluding ligatures for `q`, `x` and `z`. Thus the word `Conhanzi` turns out to be constructed from `Con` + `han` + `z` + `i` glyphs. Capital letters can only appear at the beginning of a ligature.
 
 ## Constructing the glyphs
 
-The ligature glyphs are constructed in such way that in a three letter combination the first letter is on the left side of the glyph, the second letter is on the top right, and the third letter is on bottom right. In two letter combinations the first letter is on top and and the second below it.  
+The ligature glyphs are constructed in such a way that in a three letter combination the first letter is on the left side of the glyph, the second letter is on the top right, and the third letter is on bottom right. In two letter combinations the first letter is on top and and the second below it.  
   
 The letters in ligature glyphs are in set positions and thus generating the ligatures to a font file was fully automated with a program. 
 
