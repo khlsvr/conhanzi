@@ -12,7 +12,7 @@ The English Wikipedia page "Radical (Chinese characters)" using the conhanzi fon
 
 ## The Chinese radicals
 
-The selection process for the glyphs was mostly based on the pronounciation of the Chinese characters in languages they are used, mostly the initial phonemes associated with the character.
+The selection process for the glyphs was mostly based on the pronounciation of the Chinese characters in languages they are used, mostly the initial phonemes associated with the character. Other criteria was the prevalence of the radical in different positions within glyphs.
 
 ![conhanzi_glyphs](/static/conhanzi-parts_900x165.png)
 
@@ -50,6 +50,4 @@ To use the font properly in other applications make sure the application support
 
 ## Legality
 
-Because two (free) fonts namely [IPA Gothic](https://archlinux.org/packages/community/any/otf-ipafont/) and [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) were used in making this font, although heavily modified, I'm not sure whether it is allowed to share the [conhanzi.otf](conhanzi.otf) font file here. Please let me know if I'm not allowed to share the font file here.
-
-
+Because two (free) fonts namely [IPA Gothic](https://archlinux.org/packages/community/any/otf-ipafont/) and [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) were used in making this font, although heavily modified, I'm not sure whether it is allowed to share the [conhanzi.otf](conhanzi.otf) font file here. Please let me know if I'm not allowed to share the font file here. GPL-3.0 License has been added to this work.
