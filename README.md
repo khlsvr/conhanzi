@@ -28,7 +28,7 @@ The letters in ligature glyphs are in set positions and thus generating the liga
 
 ### Construction process
 
-The font construction was done using Fontforge with the help of its script execution feature to automate ligature generation.   
+The [font](conhanzi.otf) construction was done using Fontforge with the help of its script execution feature to automate ligature generation.   
 
 * Instead of a new empty font project, the font work was done on top of a [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) font. Every glyph in that font was transformed to 2048 width, which seems to be more suitable for Chinese characters. 
 
@@ -42,7 +42,7 @@ The font construction was done using Fontforge with the help of its script execu
 
 To use the font on-demand on any website, it is possible to create a shortcut key to toggle the font the website provides and the conhanzi (or whatever) font.  
 
-One way to do that in Qutebrowser: After having installed the font to your system create empty.css with no content and toggle_font.css with the content ` * { font-family: "conhanzi" !important; font-size: 1.1rem; }` and place them in the Qutebrowser's config dir. Add a line to the Qutebrowser's config file with the content `config.bind('css', 'config-cycle content.user_stylesheets toggle_font.css empty.css')` to toggle the font with the key binding `css`.   
+One way to do that in Qutebrowser: After having installed the [font](conhanzi.otf) to your system create empty.css with no content and toggle_font.css with the content ` * { font-family: "conhanzi" !important; font-size: 1.1rem; }` and place them in the Qutebrowser's config dir. Add a line to the Qutebrowser's config file with the content `config.bind('css', 'config-cycle content.user_stylesheets toggle_font.css empty.css')` to toggle the font with the key binding `css`.   
 
 Same can be achieved in other web browsers too. For example the dotsies website provides a "bookmarklet" method for this. There are probably other ways to do it too.  
 
@@ -50,6 +50,6 @@ To use the font properly in other applications make sure the application support
 
 ## Legality
 
-Because two (free) fonts namely [IPA Gothic](https://archlinux.org/packages/community/any/otf-ipafont/) and [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) were used in making this font, although heavily modified, I'm not sure whether it is allowed to share the conhanzi font file here. Please let me know if I'm not allowed to share the font file here.
+Because two (free) fonts namely [IPA Gothic](https://archlinux.org/packages/community/any/otf-ipafont/) and [Code New Roman](https://aur.archlinux.org/packages/otf-code-new-roman) were used in making this font, although heavily modified, I'm not sure whether it is allowed to share the [conhanzi.otf](conhanzi.otf) font file here. Please let me know if I'm not allowed to share the font file here.
 
 
