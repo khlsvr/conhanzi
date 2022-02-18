@@ -42,9 +42,9 @@ The [font](conhanzi.otf) construction was done using Fontforge with the help of 
 
 To use the font on-demand on any website, it is possible to create a shortcut key to toggle the font the website provides and the conhanzi (or whatever) font.  
 
-One way to do that in Qutebrowser: After having installed the [font](conhanzi.otf) to your system create empty.css with no content and toggle_font.css with the content ` * { font-family: "conhanzi" !important; font-size: 1.1rem; }` and place them in the Qutebrowser's config dir. Add a line to the Qutebrowser's config file with the content `config.bind('css', 'config-cycle content.user_stylesheets toggle_font.css empty.css')` to toggle the font with the key binding `css`.   
+One way to do that in Qutebrowser: After having installed the [font](conhanzi.otf) to your system create empty.css with no content and toggle_font.css with for example the content ` * { font-family: "conhanzi" !important; font-size: 1.1rem; }` and place them in the Qutebrowser's config dir. Add a line to the Qutebrowser's config file with the content `config.bind('css', 'config-cycle content.user_stylesheets toggle_font.css empty.css')` to toggle the font with the key binding `css`.   
 
-Same can be achieved in other web browsers too. For example the dotsies website provides a "bookmarklet" method for this. There are probably other ways to do it too.  
+Same can be achieved in other web browsers too. For example in case of the dotsies font, the dotsies website provides a "bookmarklet" method for this. There are probably other ways to do it too.  
 
 To use the font properly in other applications make sure the application supports ligatures in fonts.  
 
